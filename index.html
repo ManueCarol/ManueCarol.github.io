@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gastro Sabor</title>
+
+	<link rel="icon" href="imagens/icone.png">
+
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+
+	@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+	
+	body{
+		/*background-image: url(imagens/fundo.png);
+	
+    background-repeat: no-repeat;
+	  background-position: center center;
+	  background-size: 70%;
+	  background-attachment: fixed;*/
+	  background-color: rgba(249, 236, 165, 0.7);
+	   font-family: "Sour Gummy", sans-serif;
+
+	}
+	.myNavbar{
+		 background-color: rgba(244, 155, 77, 0.8);
+	}
+
+	.navbar-brand{
+	  font-family: "Sour Gummy", sans-serif;
+		font-size: 20px;
+		height: 60px;
+    display: flex;
+    align-items: center; 
+    overflow: hidden; 
+    padding: 0 15px;
+	}
+
+	.navbar-brand img{
+		width: 40%;
+		height: auto;
+		margin-top: 22px;
+	}
+	
+
+	.texto{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		font-size: 19px;
+		margin-top: 20px ;
+		margin-bottom: 40px;
+	}
+
+	.texto2{
+		display: flex;
+		flex-direction: column;
+		text-align: justify;
+		font-size: 15px;
+		margin-top: 20px ;
+		margin-bottom: 40px;
+	}
+
+		.titulo{
+	text-align: center;
+	color: #8bc250;
+	font-size: 35px;
+	text-shadow: #69923d -2px -2px;
+}
+
+
+.titulo2{
+	text-align: center;
+	color: #587f2e;
+	font-size: 30px;
+}
+
+.titulo3{
+	text-align: center;
+	color: #f49836;
+	font-size: 35px;
+	text-shadow: #cc8132 -2px -2px;
+}
+
+
+
+	.collapsed{
+		background-color: rgba(244, 155, 77, 1.0);
+		color: white;
+	}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 10px;
+}
+
+	#carouselExample {
+		display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+		border-radius: 15px;
+		overflow: hidden;
+   		width: 50vw;
+    	height: 50vh;
+    	margin-top: 0;
+   	}
+
+	.carousel-inner img {
+	    width: 1000px; 
+	    height: 500px;
+	    margin: 0 auto;
+	    object-fit: cover;
+	}
+
+	#centro{
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+
+	#accordionFlushExample{
+display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+		font-size: 20px;
+		text-align: left;
+		padding-left: 30%;
+		padding-right: 29%;
+
+		margin-bottom: 2%;
+	}
+
+
+.footer {
+    background-color: #587f2e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;          
+    flex: 1;            
+}
+
+.footer h4 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.footer p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+
+		@media only screen and (min-width:768px) and (max-width: 1024px){
+
+			.texto{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: justify;
+				font-size: 19px;
+
+				margin-top: 20px ;
+				margin-bottom: 40px;
+
+			}
+
+			.texto2{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+
+				text-align: justify;
+				font-size: 19px;
+
+				margin-bottom: 50px;
+		}
+
+			
+
+			.texto3{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: justify;
+				font-size: 20px;
+
+				margin-bottom: 50px;
+				margin-right: 28%;
+			}
+
+			#accordionFlushExample{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				
+				font-size: 14px;
+				text-align: left;
+				padding-left: 0;
+				padding-right: 0;
+
+				margin-bottom: 2%;
+			}
+
+			.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;           
+    padding: 20px;
+    background-color: #587f2e;     
+    border-top: 1px solid #ddd;    
+
+}
+
+.footer-column {
+    text-align: center;          
+    flex: 1;                       
+}
+
+.footer-column h4 {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.footer-column p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: white;
+}
+
+.navbar-brand img{
+	width: 100%;
+	align-content: center;
+	padding-top: 40px;
+
+}
+
+.navbar-brand{
+	height: 100px;
+}
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 10px;
+}
+
+	#carouselExample {
+		display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+		border-radius: 15px;
+
+   		width: 750px;
+    	height: 400px;
+    	margin-top: 0;
+    	object-fit: cover;
+   	}
+
+	.carousel-inner img {
+	    width: 750px; 
+	    height: 500px;
+	    margin: 0;
+
+	}
+
+.texto{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 20px;
+}
+	}
+	
+
+		
+
+		@media only screen and (min-width: 481px) and (max-width:767px){
+
+			 .texto {
+		        display: flex;
+		        flex-direction: column;
+		        justify-content: center;
+		        align-items: center;
+		        text-align: center;
+		        font-size: 100%;
+		        width: 100%;
+		        margin-top: 20px;
+		        margin-bottom: 40px;
+    		}
+
+    		.texto2{
+				display: flex;
+				flex-direction: column;
+			
+				text-align: justify;
+				font-size: 100%;
+
+				margin-bottom: 50px;
+				margin-right: 2%;
+		        margin-left: 2%;
+			}
+
+
+			#accordionFlushExample{
+				display: flex;
+				flex-direction: column;
+				
+				font-size: 14px;
+				text-align: left;
+				padding-left: 0;
+				padding-right: 0;
+
+				margin-bottom: 2%;
+			}
+
+
+			.carousel-container {
+	    display: flex;
+	    justify-content: center;
+
+	    align-items: center;
+	    height: auto; 
+   		margin-top: 10px;
+	}	
+
+ #carouselExample {
+        width: 400px; 
+        height: 300px;  
+    }
+
+.carousel-inner img {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;  
+    object-fit: cover;  
+}
+
+.navbar-brand img{
+	width: 100%;
+	align-content: center;
+	padding-top: 40px;
+	margin-right: 25px;
+	margin-left: 25px;
+
+}
+
+.navbar-brand{
+	height: 100px;
+}
+
+	.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;           
+    padding: 20px;
+    background-color: #587f2e;     
+    border-top: 1px solid #ddd;    
+
+}
+
+.footer-column {
+    text-align: center;          
+    flex: 1;                       
+}
+
+.footer-column h4 {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.footer-column p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: white;
+}
+
+}
+
+
+
+
+		@media only print{
+			
+	
+			.footer, 
+			#carouselExample,
+			.titulo,
+			.titulo3,
+			.hr,
+			.accordion-button{
+				display: none;
+			}
+
+			.navbar-brand img{
+				width: 100%;
+				padding-right: 25px;
+				padding-left: 25px;
+				margin-top: 40px;
+			}
+
+			.navbar-brand{
+				height: 100px;
+			}
+
+			
+
+			ul.texto2, ol.texto2 {
+        margin-left: 20px;
+    }
+
+    .accordion-body {
+        padding: 10px; /* Ajusta o padding para uma melhor apresentação na impressão */
+    }
+
+    .accordion-collapse {
+        display: block !important; /* Garante que o conteúdo dentro do accordion seja mostrado */
+    }
+		
+
+
+		
+}
+
+
+	
+
+	</style>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg myNavbar nav-links">
+	  <div class="container-fluid">
+	    <a class="navbar-brand"><img src="imagens/GastroSabor.png"> </a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#">Carnes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Saladas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Massas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Tortas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Doces</a>
+        </li>
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            Entre em contato:
+	          </a>
+	          <ul class="dropdown-menu">
+	            <li><p class="dropdown-item">Tel: (19)97167-2596</p></li>
+	            <li><p class="dropdown-item">E-mail: cl204065@g.unicamp.br </p></li>
+	          </ul>
+	    </div>
+	  </div>
+	</nav> 
+
+<br>
+
+<div class="titulo">
+	<p >RECEITAS EM DESTAQUE</p>
+</div>
+
+
+<div id="centro">
+<div class="carousel-container">
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagens/carnes.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/saladas e molhos.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/massas.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/bolos e tortas.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+</div>
+
+<br>
+<hr class="hr">
+
+<div class="titulo3">
+	<h1>MAIS POPULARES</h1>
+</div>
+<hr>
+
+<div class="titulo2">
+	    <b>Risoto de Camarão</b>
+	</div>
+
+	<div class="texto">
+	    O risoto de camarão é um prato cremoso e saboroso, perfeito para jantares especiais. Seu sabor suave combina bem com um vinho branco seco, como um Sauvignon Blanc. Ideal para ser apreciado à noite, em boa companhia.
+	</div>
+
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Ingredientes
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+      	
+      	<ul class="texto2">
+       	<li>500 g de camarão médio</li>
+       	<li>1 xícara de vinho branco seco</li>
+       	<li>3 tomates (italiano) grandes, maduros e picados</li>
+       	<li>3 dentes de alho amassados</li>
+       	<li>1 caldo de camarão (ou de peixe ou de legumes)</li>
+       	<li>Sal, parmesão, curry, salsinha, folha de louro e azeite a gosto</li>
+       	<li>1 1/2 xícara de arroz carnaroli ou arbóreo</li>
+       	<li>100 g de creme de leite</li>
+       </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Modo de preparo
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">      	
+      	<ol class="texto2">
+       	<li>Espremer um limão nos camarões e deixar descansando enquanto você rala as cebolas, pica os tomates e salsão, amassa os alhos.</li>
+       	<br>
+       	<li>Refogue metade do alho, uma das cebolas, 1 folha de louro e o talo de salsão no azeite.</li>
+       	<br>
+       	<li>Depois acrescente os tomates e refogue até formar um molho.</li>
+       	<br>
+       	<li>Tempere suavemente.</li>
+       	<br>
+       	<li>Enxague os camarões, escorra-os e jogue-os sobre uma frigideira antiaderente (pode ser uma wok ou paellera) pré-aquecida com azeite e alho picado.</li>
+       	<br>
+       	<li>Salpique sobre eles sal e curry. Acrescente os champignons. Após grelhados, despeje o molho de tomate já pronto e refogue mais um pouco, e reserve.</li>
+       	<br>
+       	<li>Coloque cerca de 1 litro de água para ferver com o caldo de camarão.</li>
+       	<br>
+       	<li>Coloque o restante da cebola e 1 folha de louro noutra panela e refogue com azeite. Despeje o arroz sem lavá-lo e mexa.</li>
+       	<br>
+       	<li>Depois coloque o vinho, sem parar de mexer. Quando evaporar o álcool, adicione a água fervente com o caldo, concha a concha, sem para de mexer, adicionando mais quando começar a secar.</li>
+       	<br>
+       	<li>Se a água fervida for pouca, é só aquecer mais (sem caldo), lembrando que o arroz arbóreo ou carnaroli cozinha em aproximadamente 17 minutos e rende mais que o arroz comum.</li>
+       	<br>
+       	<li>Após cozido, despeje-o na frigideira dos camarões, misturando delicadamente. Experimente o tempero e corrija o sal se precisar. Deixe terminando de cozinhar ou secar mais um pouco, caso necessário.</li>
+       	<br>
+       	<li>Desligue o fogo e acrescente o creme de leite, o parmesão e a salsinha picadinha. Mexa delicadamente, tampe a panela e espere uns 5 minutos para agregar o sabor. Sirva quente.</li>
+       </ol></div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+<hr class="hr">
+
+<div class="titulo2">
+	    <b>Escondidinho de filé</b>
+	</div>
+
+	<div class="texto">
+	   O escondidinho de filé, com purê cremoso e carne macia, é perfeito para dias frios ou jantares especiais. Harmoniza bem com um vinho tinto leve, como Merlot, tornando a refeição ainda mais aconchegante.
+	</div>
+
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Ingredientes
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+      	
+      	<ul class="texto2">
+       	<li>300 g de carne (de preferência filé, contra-filé ou alcatra bem macia)</li>
+       	<li>100 g de queijo mussarela</li>
+       	<li>1 colher de chá de manteiga</li>
+       	<li>3 batatas médias/grandes</li>
+       	<li>1 dente de alho</li>
+       	<li>1 colher de sopa de queijo parmesão ralado</li>
+       	<li>100 g de creme de leite (meia caixinha)</li>
+       	<li>1/2 tomate em rodelas</li>
+       </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        Modo de preparo
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">      	
+      	<ol class="texto2">
+       	<li>Corte a carne em tiras (como se fosse para estrogonofe).</li>
+       	<br>
+       	<li>Tempere com curry, alho, azeite de oliva, pimenta, sal e reserve.</li>
+       	<br>
+       	<li>Cozinhe bem as batatas, esmague e faça um puré com o leite, a manteiga e uma pitada de sal.</li>
+       	<br>
+       	<li>Na frigideira, esquente bem o óleo e polvilhe uma colher de chá de açúcar e espere dourar.</li>
+       	<br>
+       	<li>Frite a carne (cuidado que o açúcar faz respingar bastante) até que fique dourada mas mantendo a maciez.</li>
+       	<br>
+       	<li>Em um refratário, coloque a carne já pronta e cubra com o creme de leite, depois o puré de batatas, as rodelas de tomate, uma camada de queijo mussarela e um pouco de orégano e o queijo ralado.Leve ao forno até que o queijo derreta e sirva.</li>
+       </ol></div>
+    </div>
+  </div>
+  </div>
+</div>
+
+	<hr class="hr">
+
+<div class="titulo2">
+	    <b>Torta de limão</b>
+	</div>
+
+	<div class="texto">
+	   A torta de limão é leve e refrescante, perfeita para dias quentes. Combina bem com chá gelado ou espumante, ideal para ocasiões especiais.
+	</div>
+
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        Ingredientes
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+      	
+      	<ul class="texto2">
+       	<li>200 g de biscoito de maisena</li>
+       	<li>150 g de margarina</li>
+       	<li>1 lata de leite condensado (395 g)</li>
+       	<li>Suco de 4 limões</li>
+       	<li>1 caixa de creme de leite (200 g)</li>
+       	<li>Raspas de 2 limões</li>
+       	<li>3 ou 4 claras de ovo</li>
+       	<li>3 colheres (sopa) de açúcar</li>
+       </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+        Modo de preparo
+      </button>
+    </h2>
+    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">      	
+      	<ol class="texto2">
+       	<li>Triture o biscoito de maisena em um liquidificador ou processador.</li>
+       	<br>
+       	<li>Junte a margarina e bata mais um pouco.</li>
+       	<br>
+       	<li>Despeje a massa em uma forma de fundo removível (27 cm de diâmetro).</li>
+       	<br>
+       	<li>Com as mãos, espalhe os biscoitos triturados no fundo e nas laterais da forma, cobrindo toda área de maneira uniforme.</li>
+       	<br>
+       	<li>Leve ao forno médio (180° C), preaquecido, por aproximadamente 10 minutos.</li>
+       	<br>
+       	<li>Bata todos os ingredientes no liquidificador (exceto as raspas de limão) até obter um creme liso e firme.</li>
+       	<li>Recheie a massa já assada e leve à geladeira por 30 minutos.</li>
+       	<li>Bata as claras em neve e acrescente o açúcar.</li>
+       	<li>Misture até obter um ponto de suspiro e leve ao forno até dourar.</li>
+       	<li>Desenforme a torta (sem retirar o fundo falso), despeje a cobertura e acrescente as raspas de limão.</li>
+       </ol></div>
+    </div>
+  </div>
+  </div>
+</div>
+	
+	<hr class="hr">
+
+<div class="titulo2">
+	    <b>Brownie de micro-ondas</b>
+	</div>
+
+	<div class="texto">
+		O brownie de micro-ondas é prático e irresistível, com textura macia e sabor intenso. Perfeito para um lanche rápido, combina bem com leite ou café. Uma delícia para qualquer momento!
+	</div>
+
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+        Ingredientes
+      </button>
+    </h2>
+    <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+      	
+      	<ul class="texto2">
+      <li>4 colheres (sopa) de manteiga</li>
+			<li>4 colheres (sopa) de leite</li>
+			<li>4 colheres (sopa) de achocolatado</li>
+			<li>4 colheres (sopa) de leite condensado</li>
+			<li>4 colheres (sopa) de farinha de trigo</li>
+			<li>1 pitada de sal</li>
+       </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseSix">
+        Modo de preparo
+      </button>
+    </h2>
+    <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">      	
+      	<ol class="texto2">
+       	<li>Misture tudo delicadamente em um recipiente que possa ir para o micro-ondas.</li><br>
+       	<li>Leve para o micro-ondas por 2 minutos e fique atento.</li><br>
+       	<li>Se precisar, coloque mais 1 minuto.</li><br>
+       </ol></div>
+    </div>
+  </div>
+  </div>
+</div>
+	
+<footer class="footer">
+    <div class="footer-column">
+        <h4>Manuela Nogueira</h4>
+        <p>RA: 204065</p>
+    </div>
+    <div class="footer-column">
+        <h4>Ana Carolina</h4>
+        <p>RA: 204057</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
